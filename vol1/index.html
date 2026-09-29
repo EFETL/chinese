@@ -13,14 +13,14 @@
   --shadow:0 4px 18px rgba(30,45,70,.08);
 }
 *{box-sizing:border-box}
-html{font-size:17px}
+html{font-size:18px}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.7}
 button{font-family:inherit;font-size:1rem;cursor:pointer}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
 header.hero{background:linear-gradient(135deg,#1f3a63 0%,#3f6aa8 60%,#f2a541 140%);color:#fff;padding:40px 0 32px}
 .hero h1{margin:0 0 6px;font-size:1.9rem;font-weight:900;letter-spacing:.04em}
 .hero p{margin:0;opacity:.92}
-.hero .tag{display:inline-block;background:rgba(255,255,255,.18);padding:2px 12px;border-radius:99px;font-size:.85rem;margin-bottom:10px}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.18);padding:2px 12px;border-radius:99px;font-size:1rem;margin-bottom:10px}
 nav.tabs{position:sticky;top:0;z-index:20;background:rgba(246,244,239,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 nav.tabs .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
 .tab{border:none;background:#fff;color:var(--ink);padding:8px 16px;border-radius:99px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.06);font-weight:500}
@@ -32,27 +32,27 @@ main{padding:10px 0 60px}
 .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:22px;margin:0 0 20px}
 h2{font-size:1.45rem;margin:26px 0 4px;color:var(--main)}
 h3{font-size:1.15rem;margin:0 0 10px;color:var(--main)}
-.muted{color:var(--muted);font-size:.92rem}
-.pill{display:inline-block;font-size:.8rem;padding:1px 10px;border-radius:99px;background:var(--hi);color:#8a5a00;margin-right:6px;font-weight:700}
+.muted{color:var(--muted);font-size:1rem}
+.pill{display:inline-block;font-size:1rem;padding:1px 10px;border-radius:99px;background:var(--hi);color:#8a5a00;margin-right:6px;font-weight:700}
 .btn{border:none;background:var(--main);color:#fff;padding:9px 20px;border-radius:12px;font-weight:700}
 .btn.alt{background:var(--accent);color:#3b2600}
 .btn.ghost{background:#eef1f6;color:var(--main)}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:760px){.grid2{grid-template-columns:1fr}html{font-size:16px}.hero h1{font-size:1.5rem}}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}.hero h1{font-size:1.5rem}}
 
 /* ---------- 考點雷達 ---------- */
 .bars .b{display:grid;grid-template-columns:150px 1fr 44px;gap:10px;align-items:center;margin:7px 0}
 .bars .track{background:#eef1f6;border-radius:99px;height:14px;overflow:hidden}
 .bars .fill{height:100%;background:linear-gradient(90deg,var(--main-2),var(--accent));border-radius:99px;width:0;transition:width 1s ease}
-@media(max-width:560px){.bars .b{grid-template-columns:100px 1fr 36px;font-size:.9rem}}
-.chips span{display:inline-block;background:#eef1f6;border-radius:10px;padding:3px 10px;margin:4px 4px 0 0;font-size:.95rem}
+@media(max-width:560px){.bars .b{grid-template-columns:100px 1fr 36px;font-size:1rem}}
+.chips span{display:inline-block;background:#eef1f6;border-radius:10px;padding:3px 10px;margin:4px 4px 0 0;font-size:1rem}
 .chips span b{color:var(--accent-2)}
-.lessoncards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.lessoncards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
 @media(max-width:860px){.lessoncards{grid-template-columns:1fr 1fr}}
 .lc{border-radius:16px;padding:18px;color:#fff;cursor:pointer;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);transition:transform .2s}
 .lc:hover{transform:translateY(-3px)}
-.lc .n{font-size:.85rem;opacity:.9}.lc .t{font-size:1.3rem;font-weight:900}.lc .d{font-size:.85rem;opacity:.92}
+.lc .n{font-size:1rem;opacity:.9}.lc .t{font-size:1.3rem;font-weight:900}.lc .d{font-size:1rem;opacity:.92}
 
 /* ---------- 動畫 ---------- */
 .stage{border-radius:16px;overflow:hidden;background:#0d1b33;position:relative}
@@ -112,7 +112,7 @@ h3{font-size:1.15rem;margin:0 0 10px;color:var(--main)}
 .opt.ok{border-color:var(--ok);background:var(--ok-bg)}
 .opt.bad{border-color:var(--bad);background:var(--bad-bg)}
 .combo{font-weight:900;color:var(--accent-2)}
-.star{color:var(--accent-2);font-size:.85rem;font-weight:700}
+.star{color:var(--accent-2);font-size:1rem;font-weight:700}
 
 /* ---------- 配對 ---------- */
 .mcols{display:grid;grid-template-columns:1fr 1.6fr;gap:14px}
@@ -135,7 +135,7 @@ h3{font-size:1.15rem;margin:0 0 10px;color:var(--main)}
 .mq{border-top:1px solid var(--line);padding:16px 0}
 .mq:first-of-type{border-top:none}
 .mq .stem{font-weight:500;margin-bottom:8px}
-.mq .src{font-size:.78rem;color:#fff;background:var(--main-2);border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:2px}
+.mq .src{font-size:1rem;color:#fff;background:var(--main-2);border-radius:6px;padding:0 6px;margin-left:6px;vertical-align:2px}
 .mq .o{display:block;width:100%;text-align:left;border:2px solid var(--line);background:#fff;border-radius:12px;padding:9px 12px;margin:6px 0;font-size:1rem}
 .mq .o.ok{border-color:var(--ok);background:var(--ok-bg)}
 .mq .o.bad{border-color:var(--bad);background:var(--bad-bg)}
@@ -157,17 +157,28 @@ h3{font-size:1.15rem;margin:0 0 10px;color:var(--main)}
 .flip .f,.flip .bk2{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;padding:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--shadow)}
 .flip .f{background:#fff}
 .flip .f .sym{font-size:2rem;font-weight:900;color:var(--accent-2)}
-.flip .bk2{background:var(--main);color:#fff;transform:rotateY(180deg);font-size:.88rem;line-height:1.5}
+.flip .bk2{background:var(--main);color:#fff;transform:rotateY(180deg);font-size:1rem;line-height:1.5}
 
-footer{background:#1f3a63;color:#dfe7f3;padding:28px 0;font-size:.9rem}
+
+/* 自學一 */
+.tstage{background:linear-gradient(135deg,#eef6e8,#fdf6e3);border-radius:16px;min-height:260px;display:flex;align-items:center;justify-content:center;padding:20px}
+.qcard{text-align:center;max-width:640px}
+.qe{font-size:3rem}.qq{font-size:1.4rem;font-weight:700;line-height:1.7;margin:8px 0;color:#2d4a22}.qw{color:var(--muted);font-size:1.05rem}
+.pop{animation:pop .6s ease}
+@keyframes pop{0%{opacity:0;transform:scale(.9) translateY(10px)}100%{opacity:1;transform:none}}
+.mx{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:620px}
+.mxc{border-radius:14px;padding:16px;color:#fff;display:flex;flex-direction:column;gap:4px;font-size:1.05rem}
+.mxc b{font-size:1.15rem}
+@media(max-width:560px){.tstage{padding:10px}.mxc{padding:12px}}.mxc.a{background:#d9534f}.mxc.b{background:#2e9e6b}.mxc.c{background:#f0ad4e}.mxc.d{background:#8a94a2}
+footer{background:#1f3a63;color:#dfe7f3;padding:28px 0;font-size:1rem}
 footer a{color:#ffd48a}
 </style>
 </head>
 <body>
 <header class="hero">
   <div class="wrap">
-    <a href="../" style="color:#fff;opacity:.85;text-decoration:none;font-size:.9rem;display:block;margin-bottom:8px">← 回國文選單</a><span class="tag">康軒版 國一上 ｜ 第一次段考</span>
-    <h1>國文段考闖關｜L1～L3＋語文天地一</h1>
+    <a href="../" style="color:#fff;opacity:.85;text-decoration:none;font-size:1rem;display:block;margin-bottom:8px">← 回國文選單</a><span class="tag">康軒版 國一上 ｜ 第一次段考</span>
+    <h1>國文段考闖關｜L1～L3＋語文天地一＋自學一</h1>
     <p>先看動畫弄懂課文，再用遊戲練熟考點，最後做段考模擬題。</p>
   </div>
 </header>
@@ -367,6 +378,51 @@ l3:{
     {q:'下列文句「」中的詞語，何者使用最恰當？',o:['限量球鞋一開賣就被搶光，晚到的人只好「向隅」','這家店的招牌菜「垂涎三尺」，吃過的都說讚','這件衣服洗過後，竟然「黯然神傷」了','全班「一哄而上」地安靜看書'],a:0,src:'福興',ex:'「向隅」是錯過機會而失望，用在沒搶到東西最恰當。垂涎三尺是形容人很想吃，不能拿來形容菜；衣服洗後褪色要用「黯然失色」；一哄而上是很多人一起衝上去做事，和安靜看書的情境不合。'},
   ]
 },
+s1:{
+  no:'自學一', title:'善用時間的方法', author:'李偉文', color:'linear-gradient(135deg,#3a7d44,#9bc53d)',
+  desc:'管理要做的事｜輕重緩急｜名言引用',
+  quick:[
+    ['傳「誦」','ㄙㄨㄥˋ',['ㄙㄨㄥ','ㄙㄨㄥˇ','ㄩㄥˇ'],0],
+    ['「惶」然','ㄏㄨㄤˊ',['ㄏㄨㄤ','ㄏㄨㄤˇ','ㄍㄨㄤˊ'],0],
+    ['「騰」出時間','ㄊㄥˊ',['ㄊㄥ','ㄊㄥˋ','ㄉㄥˋ'],0],
+    ['「綑」綁','ㄎㄨㄣˇ',['ㄎㄨㄣ','ㄍㄨㄣˇ','ㄎㄨㄣˋ'],0],
+    ['「瑣」碎','ㄙㄨㄛˇ',['ㄙㄨㄛ','ㄙㄨㄛˋ','ㄙㄠˇ'],0],
+    ['「沮」喪','ㄐㄩˇ',['ㄐㄩ','ㄗㄨˇ','ㄑㄩˇ'],1],
+    ['輕重「緩」急','ㄏㄨㄢˇ',['ㄏㄨㄢˋ','ㄏㄨㄢˊ','ㄩㄢˊ'],0],
+    ['「謀」財害命','ㄇㄡˊ',['ㄇㄡˇ','ㄇㄡ','ㄇㄛˊ'],0],
+    ['「ㄏㄨㄤˊ」然','惶',['徨','煌','皇'],0],
+    ['「ㄙㄨㄛˇ」碎','瑣',['鎖','所','索'],0],
+    ['「ㄊㄥˊ」出時間','騰',['藤','謄','疼'],0],
+    ['「ㄐㄩˇ」喪','沮',['阻','組','詛'],1],
+  ],
+  words:[
+    ['傳誦','廣為流傳、誦讀'],['不時之需','隨時可能會有的需求'],['輕重緩急','事情的重要程度與處理的緊急先後次序'],
+    ['惶然','害怕、恐懼的樣子'],['零星','零散不成整數'],['一席之位','具有某種程度的地位'],['騰','空出、挪出'],
+    ['謀財害命','為了錢財而害人性命'],['慢性自殺','比喻慢慢地損害自己的生命']
+  ],
+  sorts:[
+    {title:'時間四象限：這件事該怎麼處理？',tip:'先分「重要嗎？」再分「緊急嗎？」',buckets:['重要又緊急→第一優先','重要不緊急→拆成小任務、訂計畫','緊急不重要→集中快速處理','不重要不緊急→能不做就不做'],items:[
+      ['明天早上就要交的國文作業',0],['段考就在後天，還沒複習',0],
+      ['每天背 10 個英文單字，準備會考',1],['每週陪家人吃一頓晚餐',1],['養成運動習慣',1],
+      ['同學傳訊息問團購要不要跟',2],['臨時要回覆的群組訊息',2],
+      ['沒有目的地一直滑短影音',3],['重複看已經看過的八卦新聞',3]]},
+    {title:'作者會同意這個想法嗎？',tip:'作者的核心觀點：管理「要做的事」，把時間花在真正重要的事',buckets:['作者同意','作者不同意'],items:[
+      ['真正的問題在於管理自己要做的事',0],['我們需要的是「節省工作」',0],['設定優先順序，先決定哪些必須捨棄',0],['把時間花在看重的人與事上',0],['需要完整而集中的時間，做真正重要的事',0],
+      ['時間可以像金錢一樣累積儲存、加以管理',1],['同時處理很多事，就是最有效率',1],['只要一直節省時間，生活就會有意義',1]]},
+  ],
+  mcq:[
+    {q:'魯迅：「時間就像海綿裡的水一樣，如果你願意擠，總還是有的。」這句話的含義與下列何者最接近？',o:['人們常覺得時間不夠，是因為沒找出瑣碎的時間','時間與海綿裡的水一樣，分量固定而有限','擠海綿的水，就像人們浪費掉的光陰那麼多','時間像流水一樣不停向前，無法停下'],a:0,src:'文府、課本練習',ex:'「擠」海綿的水，比喻把零碎時間找出來。只要願意找，總能擠出時間。'},
+    {q:'作者認為「時間管理」真正的問題在哪裡？',o:['管理自己要做的事','想辦法節省更多時間','把時間像金錢一樣存起來','盡量同時處理很多事'],a:0,src:'課本第四段',ex:'作者說：真正的問題不在於「管理時間」，而是「管理自己要做的事」；需要的不是「節省時間」，而是「節省工作」。'},
+    {q:'作者說「時間與金錢不同」，理由是什麼？',o:['時間無法累積儲存，所以不能像錢一樣管理','時間比金錢更容易賺取','金錢無法管理，時間卻可以','時間和金錢都不重要'],a:0,src:'課本第三段',ex:'「管理」是指可以累積儲存並加以運用，錢可以，時間不行，所以時間不是我們能管理的。'},
+    {q:'「我們以為善加利用時間，可以同時處理很多事，其實所完成的零星小事，只是創造出非常有效率的假象。」作者認為善用時間的方法為何？',o:['認清何謂重要的事，然後致力處理','在有限時間內高效率完成很多事','同步處理幾件事以節省時間','利用瑣碎時間完成許多小事'],a:0,src:'文府、課本練習',ex:'作者認為同時做很多小事只是「有效率的假象」，要用完整而集中的時間做真正重要的事。'},
+    {q:'威廉．考柏：「真正快樂的唯一來源，是為了某種我們看重的意義而花費我們的時間、我們的生命。」最能詮釋這句話的是？',o:['將生命花費在有意義的目標上才是真快樂','真正的快樂來自奉獻錢財，給予眾人幸福','生命的意義在於花時間做快樂的事','人生苦短，應及時行樂'],a:0,src:'三民、課本練習',ex:'重點是「我們看重的意義」，把時間和生命花在有意義的目標上，才是真正的快樂。'},
+    {q:'魯迅說：「浪費別人的時間，等於謀財害命；浪費自己的時間，等於慢性自殺。」這句話的意思是什麼？',o:['時間就是生命，浪費時間就是浪費生命','浪費時間會直接危害身體健康','遲到的人一定會被處罰','只有浪費別人的時間才是錯的'],a:0,src:'向上',ex:'「生命是以時間為單位的」，所以浪費時間等於耗損生命。這是比喻，不是真的危害健康或性命。'},
+    {q:'作者與人有約時「通常隨身帶書，以備不時之需」，這個做法說明了什麼？',o:['善用等待時的零碎時間','作者很喜歡遲到','作者常常突然想看書','作者不信任朋友'],a:0,src:'向上',ex:'作者痛恨遲到，也預防別人遲到浪費時間，所以帶書利用等待的零碎時間閱讀。'},
+    {q:'「原本應該帶來自由的科技，卻創造了手銬，將我們的思緒綑綁在片斷零碎的訊息中。」這句話的意思是什麼？',o:['科技讓人的注意力被零碎訊息占據，反而不自由','科技讓人追求自由，結果被警察逮捕','科技發展使人類更加自由','手機的訊息都是有用的知識'],a:0,src:'向上',ex:'「手銬」是比喻：行動通訊讓我們被零碎訊息綁住，失去完整思考的時間。'},
+    {q:'關於作者李偉文，下列敘述何者正確？',o:['職業是牙醫師，也是荒野保護協會榮譽理事長','本名劉俠，創立伊甸基金會','是臺灣寫作童詩的先驅','以報導文學著稱'],a:0,src:'課本作者',ex:'李偉文是牙醫師，熱愛自然、推動環境保育。其他選項分別是杏林子、楊喚、古蒙仁。'},
+    {q:'根據〈番茄鐘工作法〉，下列何者做法正確？',o:['工作二十五分鐘就休息五分鐘，專心時一次只做一件事','一邊寫功課一邊回訊息，效率最高','一定要使用番茄形狀的計時器','每工作二十五分鐘就休息十五分鐘'],a:0,src:'課本閱讀測驗',ex:'番茄鐘：工作25分鐘、休息5分鐘，重複四到五回合後再長休息15分鐘。什麼計時器都可以，重點是專心與固定休息。'},
+  ]
+},
 p1:{
   no:'語文天地一', title:'標點符號', author:'十五種標點', color:'linear-gradient(135deg,#c2562b,#f2a541)',
   desc:'分號｜破折號｜引號｜斷句歧義',
@@ -433,7 +489,7 @@ const RADAR={
 };
 
 /* ================= 導覽 ================= */
-const TABS=[['home','🏠 考點雷達'],['l1','🌙 夏夜'],['l2','🦪 生之歌選'],['l3','🍧 吃冰的滋味'],['p1','✒️ 標點符號'],['rhet','🎭 修辭大亂鬥']];
+const TABS=[['home','🏠 考點雷達'],['l1','🌙 夏夜'],['l2','🦪 生之歌選'],['l3','🍧 吃冰的滋味'],['p1','✒️ 標點符號'],['s1','⏰ 善用時間'],['rhet','🎭 修辭大亂鬥']];
 let cur='home', curSub={};
 function drawTabs(){
   $('#tabs').innerHTML=TABS.map(([k,t])=>`<button class="tab ${k===cur?'on':''}" data-k="${k}">${t}</button>`).join('');
@@ -455,7 +511,7 @@ function render(){
   <div id="panel"></div>`;
   app.querySelectorAll('.sub').forEach(b=>b.onclick=()=>{curSub[cur]=b.dataset.s;render()});
   const p=$('#panel');
-  if(s==='anim') ({l1:animL1,l2:animL2,l3:animL3,p1:animP1})[cur](p);
+  if(s==='anim') ({l1:animL1,l2:animL2,l3:animL3,p1:animP1,s1:animS1})[cur](p);
   if(s==='quick') renderQuick(p,d.quick);
   if(s==='match') renderMatch(p,d.words);
   if(s==='sort'){p.innerHTML=d.sorts.map((_,i)=>`<div class="card" id="so${i}"></div>`).join('');d.sorts.forEach((so,i)=>renderSort($('#so'+i),so))}
@@ -471,7 +527,7 @@ function renderHome(app){
   <h2>📡 第一次段考考點雷達</h2>
   <p class="muted">整理四所學校的第一次段考卷（四育、福興、自強、向上），看哪些東西「每校都考」。</p>
   <div class="lessoncards" style="margin:16px 0 24px">
-    ${['l1','l2','l3','p1'].map(k=>`<div class="lc" style="background:${L[k].color}" data-k="${k}"><div><div class="n">${L[k].no}</div><div class="t">${L[k].title}</div></div><div class="d">${L[k].desc}</div></div>`).join('')}
+    ${['l1','l2','l3','p1','s1'].map(k=>`<div class="lc" style="background:${L[k].color}" data-k="${k}"><div><div class="n">${L[k].no}</div><div class="t">${L[k].title}</div></div><div class="d">${L[k].desc}</div></div>`).join('')}
   </div>
   <div class="card"><h3>選擇題最常考的主題</h3>${bar(RADAR.topics,4)}</div>
   <div class="grid2">
@@ -482,7 +538,7 @@ function renderHome(app){
   </div>
   <div class="card"><h3>🧭 建議闖關順序</h3>
   <p>① 每課先看 <b>🎬 動畫導覽</b>，弄懂課文在寫什麼 → ② <b>⚡ 快問快答</b>、<b>🔗 注釋配對</b>，練熟基本分 → ③ <b>🎯 分類挑戰</b>，練修辭與結構 → ④ <b>📝 段考模擬題</b>，檢查自己的程度。</p>
-  <p class="muted">段考範圍各校略有不同：有的學校加考自學一〈善用時間的方法〉或成語，請依自己學校的公告準備。</p></div>`;
+  <p class="muted">段考範圍各校略有不同：不少學校加考自學一〈善用時間的方法〉，有的也考成語，請依自己學校的公告準備。</p></div>`;
   app.querySelectorAll('.lc').forEach(c=>c.onclick=()=>go(c.dataset.k,'anim'));
   requestAnimationFrame(()=>setTimeout(()=>app.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%'),60));
 }
@@ -806,6 +862,42 @@ function animL3(p){
     {label:'④ 今昔對比',poem:'現代的冰品，拜科學昌明之賜，固然色彩繽紛，花樣百出，但單就口味而言，比起臺灣早年的冰製品，恐怕就<b>遜色</b>了。',key:'<b>對比手法</b>凸顯今不如昔；「遜色」＝比不上。主旨：<b>抒發懷舊之情</b>。'},
   ];
   stepper(p,steps,i=>{[0,1,2,3].forEach(k=>$('#g'+k).setAttribute('opacity',k===i?1:0));if(i===2)sBELL()},6000);
+}
+
+
+/* ================= 自學一 善用時間 動畫 ================= */
+function animS1(p){
+  p.innerHTML=`<div class="card"><div class="tstage" id="ts"></div><div class="steps"></div><div class="caption"></div></div>
+  <div class="card"><h3>🗺️ 文章脈絡一張圖</h3>
+    <p><span class="pill">開頭</span>引用魯迅「海綿裡的水」→ 只要願意，總能擠出零碎時間</p>
+    <p><span class="pill">例證</span>魯迅「謀財害命、慢性自殺」＋作者隨身帶書 → 時間就是生命，不容浪費</p>
+    <p><span class="pill">論點</span>不是「管理時間」，而是「管理自己要做的事」；不是「節省時間」，而是「節省工作」</p>
+    <p><span class="pill">方法</span>看清輕重緩急、決定捨棄什麼（金蘭都的建議）→ 用完整集中的時間做重要的事</p>
+    <p><span class="pill">結論</span>威廉．考柏：把時間花在看重的意義上，才是真正的快樂</p></div>`;
+  const quotes=[
+    {who:'魯迅',emoji:'🧽',q:'時間就像海綿裡的水一樣，如果你願意擠，總還是有的。'},
+    {who:'魯迅',emoji:'⏳',q:'浪費別人的時間，等於謀財害命；浪費自己的時間，等於慢性自殺。'},
+    {who:'李偉文（作者）',emoji:'💡',q:'真正的問題不在於「管理時間」，而是「管理自己要做的事」。'},
+    {who:'',emoji:'',q:''},
+    {who:'威廉．考柏',emoji:'🌟',q:'真正快樂的唯一來源，是為了某種我們看重的意義而花費我們的時間、我們的生命。'},
+  ];
+  const steps=[
+    {label:'① 海綿裡的水',poem:'時間就像海綿裡的水一樣，如果你願意擠，總還是有的。——魯迅',key:'意思是：覺得沒時間，是因為沒把<b>零碎時間</b>找出來。常考「這句話的含義」。'},
+    {label:'② 時間就是生命',poem:'生命是以時間為單位的，浪費別人的時間，等於謀財害命；浪費自己的時間，等於慢性自殺。',key:'時間＝生命，浪費時間就是浪費生命。作者等人時<b>隨身帶書</b>，利用零碎時間。'},
+    {label:'③ 翻轉觀念',poem:'我們需要的不是「節省時間」，而是「節省工作」。',key:'時間不像金錢能<b>累積儲存</b>，所以管不了；該管理的是<b>要做的事</b>。'},
+    {label:'④ 輕重緩急',poem:'當我們看清楚生活中的輕重緩急，並依此而調整優先順序，把想做的事都做了，就不會惶然。',key:'設定優先順序最重要的是決定<b>哪些必須捨棄</b>。同時做很多小事只是「有效率的假象」。'},
+    {label:'⑤ 真正的快樂',poem:'真正快樂的唯一來源，是為了某種我們看重的意義而花費我們的時間、我們的生命。——威廉．考柏',key:'主旨：找到渴望的事，每天空出時間<b>真切的去做</b>，把時間花在看重的人與事上。'},
+  ];
+  const matrix=`<div class="mx">
+    <div class="mxc a"><b>重要又緊急</b><span>第一優先處理</span></div>
+    <div class="mxc b"><b>重要不緊急</b><span>拆成小任務、訂計畫</span></div>
+    <div class="mxc c"><b>緊急不重要</b><span>集中快速處理</span></div>
+    <div class="mxc d"><b>不重要也不緊急</b><span>能不做就不做</span></div></div>`;
+  stepper(p,steps,i=>{
+    const ts=$('#ts');const q=quotes[i];
+    ts.innerHTML = i===3 ? matrix : `<div class="qcard"><div class="qe">${q.emoji}</div><div class="qq">「${q.q}」</div><div class="qw">── ${q.who}</div></div>`;
+    ts.firstElementChild.classList.add('pop');
+  },6000);
 }
 
 /* ================= 語一 斷句魔術 ================= */
