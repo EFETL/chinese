@@ -55,7 +55,7 @@ select{max-width:100%}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>📊 國二國文段考闖關｜老師端</h1><p>翰林 國二上 第一次段考：學生交卷的姓名、分數與錯題（開啟即自動讀取）</p></div></header>
+<header><div class="wrap"><h1>📊 國三國文段考闖關（翰林）｜老師端</h1><p>國三上第一次段考：土、詞選、與921說再見、對聯、大明湖：學生交卷的姓名、分數與錯題（開啟即自動讀取）</p></div></header>
 <main class="wrap">
   <div class="card"><div class="row"><button class="btn" id="load">🔄 讀取最新成績</button></div>
     <p class="muted" id="msg" style="margin:10px 0 0">讀取中…（約需 5～10 秒）</p></div>
@@ -63,9 +63,9 @@ select{max-width:100%}
 </main>
 <script>
 const ENDPOINT='https://script.google.com/macros/s/AKfycbzPt9-_BdRtHhH6f6GAuE9LLRXK8m3j7uavDxpm0xaaJCitl2KfOoYcviYgDZNdNjflLg/exec';
-const SUBJECT='chinese8-1';
-const KEY='qk-a24d325f02cc7da5';  /* 段考闖關成績後端的讀取密鑰 */
-const UNIT={1:'第一課 田園之秋選',2:'第二課 古詩選',3:'第三課 下雨天，真好',4:'語文常識一 詞類',5:'自學一 世說新語選',6:'第十課 畫的哀傷',7:'修辭＋綜合',9:'總測驗'};
+const SUBJECT='chi9-hanlin-1';
+const KEY='qk-a24d325f02cc7da5';  /* 段考闖關成績後端的讀取密鑰（Code.gs 的 READ_KEY） */
+const UNIT={"1": "第一課 土", "2": "第二課 詞選", "3": "第三課 與921說再見", "4": "語文常識 對聯", "5": "自學選文 大明湖", "7": "宋詞＋綜合", "9": "總測驗"};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 let ROWS=[];
