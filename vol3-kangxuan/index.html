@@ -216,11 +216,7 @@ img,svg{max-width:100%}
 <nav class="tabs"><div class="wrap" id="tabs"></div></nav>
 <main><div class="wrap" id="app"></div></main>
 <button class="bgm" id="bgmBtn"></button>
-<footer><div class="wrap">
-  <b>全民補習班 國文科</b>｜考點依據：康軒版同版 20 校第一次段考試卷（臺中向上、臺中崇德、基隆銘傳、高雄大社、屏東明正、新北崇林、高雄左營、新北三和、新北五峰、新北桃子腳、新北永和、高雄燕巢、花蓮宜昌、花蓮美崙、新北錦和、高雄三民〔113 學年〕、高雄光華、高雄正興、高雄鳳甲、高雄鼎金）整理；他版 41 校只作共通考點參考。模擬題皆為原創改寫，只借各校命題方向。<br>
-  注音、注釋、作者與課文原句依康軒 115 年版課本。答對、答錯都有音效；背景音樂只在「動畫導覽」播放，可按右下角按鈕關閉。<br>
-  交卷時會把你的姓名、分數與錯題傳給老師，只有老師看得到。
-  <details style="margin-top:8px"><summary>圖片來源與授權</summary>動畫照片與畫作皆來自 Wikimedia Commons（公有領域或 CC 授權）：十米跳臺與池水：Марсель Бадыкшин（CC BY 4.0）；跳臺選手躍下：Claudio Gennari（CC BY 2.0）；十米跳臺空中姿態：松雪（CC BY 2.5 CN）；跳水選手的空中動作：Ministry of Youth and Sports of Ukraine（CC BY 4.0）；風箏扶搖直上：Kritzolina（CC BY-SA 4.0）；風箏串高入雲（大連）：CEphoto, Uwe Aranas（CC BY-SA 3.0）；放風箏的父子：Jules Verne Times Two（CC BY-SA 4.0）；海邊拉著風箏的孩子：M&amp;A（CC BY 4.0）；滿樹盛開的花：Huangdan2060（CC0）；花枝版畫：Japanese fine prints, pre-1915（Public domain）；周昉〈簪花仕女圖〉局部：Zhou Fang（CC0）；白樂天像：Unknown author（Public domain）；慈烏：Tisha Mukherjee（CC BY-SA 4.0）；鳥兒銜食餵食：Marie-Lan Taÿ Pamart（CC BY 4.0）；吳起：Unknown author, Ming dynasty painting（Public domain）；曾參：Anonymous, Yuan dynasty album（Public domain）；枝頭轉黃的芭樂：Kaweesaesther（CC BY-SA 4.0）；剖開的紅心芭樂：Ivar Leidus（CC BY-SA 4.0）；改良芭樂：PattayaPatrol（CC BY-SA 4.0）；熟度不一的芭樂：Sarang（Public domain）；枝椏上的番石榴：Forest and Kim Starr（CC BY 2.0）；牛頓的蘋果樹：Humphrey Bolton（CC BY-SA 2.0）；北宋河船模型：Gary Todd（CC0）；雞蛋：Biswarup Ganguly（CC BY 3.0）；木屐：Hikaru Iwasaki（Public domain）；王羲之像：Unknown Chinese artist（Public domain）。</details>
+<footer><div class="wrap"><details style="margin-top:8px"><summary>圖片來源與授權</summary>動畫照片與畫作皆來自 Wikimedia Commons（公有領域或 CC 授權）：十米跳臺與池水：Марсель Бадыкшин（CC BY 4.0）；跳臺選手躍下：Claudio Gennari（CC BY 2.0）；十米跳臺空中姿態：松雪（CC BY 2.5 CN）；跳水選手的空中動作：Ministry of Youth and Sports of Ukraine（CC BY 4.0）；風箏扶搖直上：Kritzolina（CC BY-SA 4.0）；風箏串高入雲（大連）：CEphoto, Uwe Aranas（CC BY-SA 3.0）；放風箏的父子：Jules Verne Times Two（CC BY-SA 4.0）；海邊拉著風箏的孩子：M&amp;A（CC BY 4.0）；滿樹盛開的花：Huangdan2060（CC0）；花枝版畫：Japanese fine prints, pre-1915（Public domain）；周昉〈簪花仕女圖〉局部：Zhou Fang（CC0）；白樂天像：Unknown author（Public domain）；慈烏：Tisha Mukherjee（CC BY-SA 4.0）；鳥兒銜食餵食：Marie-Lan Taÿ Pamart（CC BY 4.0）；吳起：Unknown author, Ming dynasty painting（Public domain）；曾參：Anonymous, Yuan dynasty album（Public domain）；枝頭轉黃的芭樂：Kaweesaesther（CC BY-SA 4.0）；剖開的紅心芭樂：Ivar Leidus（CC BY-SA 4.0）；改良芭樂：PattayaPatrol（CC BY-SA 4.0）；熟度不一的芭樂：Sarang（Public domain）；枝椏上的番石榴：Forest and Kim Starr（CC BY 2.0）；牛頓的蘋果樹：Humphrey Bolton（CC BY-SA 2.0）；北宋河船模型：Gary Todd（CC0）；雞蛋：Biswarup Ganguly（CC BY 3.0）；木屐：Hikaru Iwasaki（Public domain）；王羲之像：Unknown Chinese artist（Public domain）。</details>
 </div></footer>
 <script>
 /* ================= 音效 ================= */
@@ -657,7 +653,7 @@ const RIDDLE=[
   {q:'下列文句，何者沒有錯別字？',o:['他金榜題名，全家都很高興','他耳題面命地叮嚀我','老師的話讓我提醐灌頂','時間不能任意磋跎'],a:0,src:'題／提／醍 14 校',ex:'耳提面命、醍醐灌頂、蹉跎歲月。題名用「題」（寫上名字）。'},
 ];
 /* 考點雷達（分母＝同版 20 校） */
-const RADAR={n:20,schools:'臺中向上、臺中崇德、基隆銘傳、高雄大社、屏東明正、新北崇林、高雄左營、新北三和、新北五峰、新北桃子腳、新北永和、高雄燕巢、花蓮宜昌、花蓮美崙、新北錦和、高雄三民（113 學年）、高雄光華、高雄正興、高雄鳳甲、高雄鼎金（其餘皆 114 學年）',
+const RADAR={n:20,schools:'',
   note:'另有他版（翰林、南一）41 校：〈慈烏夜啼〉27 校、〈迢迢牽牛星〉28 校、〈王藍田忿食雞子〉15 校也考，可當延伸。',
   topics:[['〈慈烏夜啼〉詩句／手法／主旨',20],['成語運用',18],['〈土芭樂的生存之道〉（題數最多）',18],['〈跳水〉',18],['〈風箏〉',18],['〈庭中有奇樹〉',18],['借代修辭',17],['古體詩／近體詩比較表',16],['〈王藍田忿食雞子〉',15],['詞性前後相同',14],['土芭樂三種生存策略',14],['詞類判斷',13],['《古詩十九首》常識',12],['華、王優劣',12],['新詩詠物猜謎',12],['世說新語課外選文',11],['白居易延伸詩',9],['跳水與風箏比較',9],['量詞',9],['立秋／二十四節氣',8],['連詞使用',8],['《世說新語》常識',8],['聯綿詞（衍聲複詞）',7]],
   zy:[['題／提／醍',14],['襟／噤／矜',13],['蹉／磋／嗟',12],['煞（煞是）',12],['熾',11],['嫗',9],['陶／淘／啕',9],['罄',8],['曲',8],['沓',8],['彆',7],['澀',7],['遺（ㄨㄟˋ）',7],['謫／摘',7],['攀',6],['噤',6],['著（ㄓㄨㄛˊ）',6],['華（ㄏㄨㄚ）',6],['諛／腴',6]],
@@ -1067,7 +1063,7 @@ function renderHome(app){
   const bar=(arr)=>`<div class="bars">${arr.map(([n,v])=>`<div class="b"><span>${n}</span><div class="track"><div class="fill" data-w="${v/N*100}"></div></div><b>${v}/${N}</b></div>`).join('')}</div>`;
   app.innerHTML=`
   <h2>📡 第一次段考考點雷達</h2>
-  <p class="muted">整理康軒版 ${N} 所學校的第一次段考卷：${R.schools}，看哪些東西「每校都考」。</p>
+  <p class="muted">整理康軒版 ${N} 所學校的第一次段考卷，看哪些東西「每校都考」。</p>
   <div class="lessoncards" style="margin:16px 0 24px">
     ${UNITS.map(k=>`<div class="lc" style="background:${L[k].color}" data-k="${k}"><div><div class="n">${L[k].no}</div><div class="t">${L[k].title}</div></div><div class="d">${L[k].desc}</div></div>`).join('')}
   </div>
